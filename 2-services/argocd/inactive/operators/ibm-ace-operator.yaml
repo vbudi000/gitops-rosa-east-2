@@ -11,15 +11,15 @@ metadata:
 spec:
   destination:
     namespace: openshift-operators
-    server: 'https://kubernetes.default.svc'
+    server: "https://kubernetes.default.svc"
   project: services
   source:
     path: 2-services/operators/ibm-ace-operator
-    repoURL: https://github.com/cloud-native-toolkit/multi-tenancy-gitops.git
+    repoURL: https://github.com/ncolon/multi-tenancy-gitops.git
     targetRevision: master
     helm:
       valueFiles:
-      - values.yaml
+        - values.yaml
   syncPolicy:
     automated:
       prune: true
