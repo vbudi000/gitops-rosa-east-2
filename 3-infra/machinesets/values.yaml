@@ -1,0 +1,26 @@
+global: {}
+refarch-machinesets:
+  infrastructureId: ""
+  cloudProvider: "aws"
+  aws:
+    region: us-east-1
+    zones:
+    - us-east-1a
+    - us-east-1b
+    - us-east-1c
+    image: ami-04a16d506e5b0e246
+    infraNodes:
+      nodeCount: 1
+      volumeSize: 120
+      volumeType: gp2
+      instanceType: m5.xlarge
+    storageNodes:
+      nodeCount: 1
+      volumeSize: 120
+      volumeType: gp2
+      instanceType: m5.2xlarge
+    cloudpakNodes:
+      nodeCount: 0
+      volumeSize: 120
+      volumeType: gp2
+      instanceType: m5.xlarge

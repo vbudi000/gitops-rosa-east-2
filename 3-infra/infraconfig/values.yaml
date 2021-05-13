@@ -1,0 +1,11 @@
+global: {}
+refarch-machinesets:
+  cloudProvider: "aws"
+  argo:
+    namespace: gitops-operator
+    serviceAccount: argocd-server
+  registry:
+    storageClassName: ocs-storagecluster-cephfs
+    replicas: 2
+  ingress:
+    replicas: 2

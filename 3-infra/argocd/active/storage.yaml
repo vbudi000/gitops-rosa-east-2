@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: storage
+  annotations:
+    argocd.argoproj.io/sync-wave: "101"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: tools
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: 3-infra/storage
+    repoURL: https://github.com/ncolon/multi-tenancy-gitops.git
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

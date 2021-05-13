@@ -1,0 +1,7 @@
+global: {}
+refarch-machinesets:
+  ocs:
+    installOCS: true
+    channel: stable-4.6
+    sizeGiB: 512
+    storageClass: thin

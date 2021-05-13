@@ -23,6 +23,8 @@ spec:
       server: https://kubernetes.default.svc
     - namespace: openldap
       server: https://kubernetes.default.svc
+    - namespace: openshift-storage
+      server: https://kubernetes.default.svc
   clusterResourceWhitelist:
     - group: ""
       kind: Namespace
