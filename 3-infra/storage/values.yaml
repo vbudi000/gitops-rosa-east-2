@@ -4,4 +4,4 @@ ocs-operator:
     installOCS: true
     channel: stable-4.6
     sizeGiB: 512
-    storageClass: thin
+    storageClass: gp2
