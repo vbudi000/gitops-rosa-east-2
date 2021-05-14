@@ -1,5 +1,5 @@
 global: {}
-refarch-machinesets:
+refarch-infraconfig:
   cloudProvider: "aws"
   argo:
     namespace: gitops-operator
