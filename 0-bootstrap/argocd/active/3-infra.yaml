@@ -42,6 +42,10 @@ spec:
       kind: ConsoleNotification
     - group: "console.openshift.io"
       kind: ConsoleLink
+    - group: "machineconfiguration.openshift.io"
+      kind: MachineConfigPool
+    - group: "machineconfiguration.openshift.io"
+      kind: ContainerRuntimeConfig
   roles:
     # A role which provides read-only access to all applications in the project
     - name: read-only
