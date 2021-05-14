@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: machinesets
+  name: infraconfig
   annotations:
     argocd.argoproj.io/sync-wave: "102"
   finalizers:
@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: 3-infra/machinesets
+    path: 3-infra/infraconfig
     repoURL: https://github.com/ncolon/multi-tenancy-gitops.git
     targetRevision: master
   syncPolicy:
