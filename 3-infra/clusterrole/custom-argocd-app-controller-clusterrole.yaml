@@ -178,3 +178,21 @@ rules:
       - machineconfiguration.openshift.io
     resources:
       - "*"
+  - verbs:
+      - "*"
+    apiGroups:
+      - openshift-cluster-node-tuning-operator
+    resources:
+      - "*"
+  - verbs:
+      - "*"
+    apiGroups:
+      - ocs.openshift.io
+    resources:
+      - "*"
+  - verbs:
+      - "*"
+    apiGroups:
+      - machine.openshift.io
+    resources:
+      - "*"
