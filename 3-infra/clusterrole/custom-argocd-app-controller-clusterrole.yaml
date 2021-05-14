@@ -180,5 +180,6 @@ rules:
       - ocs.openshift.io
       - machine.openshift.io
       - tuned.openshift.io
+      - ingresscontrollers.operator.openshift.io
     resources:
       - "*"

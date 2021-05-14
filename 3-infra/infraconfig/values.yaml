@@ -3,7 +3,7 @@ refarch-infraconfig:
   cloudProvider: "aws"
   argo:
     namespace: openshift-gitops
-    serviceAccount: argocd-cluster-argocd-server
+    serviceAccount: argocd-cluster-argocd-application-controller
   registry:
     storageClassName: ocs-storagecluster-cephfs
     replicas: 2
