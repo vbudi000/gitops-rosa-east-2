@@ -1,6 +1,6 @@
 global: {}
 refarch-machinesets:
-  infrastructureId: "gitops-refarch-6sq5d"
+  infrastructureId: "gitops-infra-hlh7c"
   cloudProvider: "aws"
   aws:
     region: us-east-1
