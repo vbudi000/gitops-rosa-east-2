@@ -4,9 +4,9 @@ metadata:
   name: custom-argocd-cluster-argocd-application-controller
 rules:
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - ''
+      - ""
     resources:
       - pods
       - services
@@ -17,7 +17,7 @@ rules:
       - secrets
       - serviceaccounts
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
       - apps
     resources:
@@ -26,83 +26,83 @@ rules:
       - replicasets
       - statefulsets
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - 'route.openshift.io'
+      - "route.openshift.io"
     resources:
       - routes
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - 'security.openshift.io'
+      - "security.openshift.io"
     resources:
       - securitycontextconstraints
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - 'operator.cert-manager.io'
+      - "operator.cert-manager.io"
     resources:
       - certmanagers
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - 'cert-manager.io'
+      - "cert-manager.io"
     resources:
       - clusterissuers
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - 'bitnami.com'
+      - "bitnami.com"
     resources:
       - sealedsecretcontrollers
       - sealedsecrets
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - 'networking.k8s.io'
+      - "networking.k8s.io"
     resources:
       - networkpolicies
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - 'integration.ibm.com'
+      - "integration.ibm.com"
     resources:
       - platformnavigators
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - 'operators.coreos.com'
+      - "operators.coreos.com"
     resources:
       - subscriptions
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - 'tekton.dev'
+      - "tekton.dev"
     resources:
       - pipelines
       - tasks
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - 'maistra.io'
+      - "maistra.io"
     resources:
       - servicemeshcontrolplanes
   - verbs:
       - create
       - list
     apiGroups:
-      - ''
+      - ""
     resources:
       - events
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
       - batch
     resources:
       - cronjobs
       - jobs
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
       - argoproj.io
     resources:
@@ -113,62 +113,68 @@ rules:
       - list
       - watch
     apiGroups:
-      - '*'
+      - "*"
     resources:
-      - '*'
+      - "*"
   - verbs:
       - get
       - list
     nonResourceURLs:
-      - '*'
+      - "*"
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
       - operators.coreos.com
     resources:
-      - '*'
+      - "*"
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
       - operator.openshift.io
     resources:
-      - '*'
+      - "*"
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
       - user.openshift.io
     resources:
-      - '*'
+      - "*"
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
       - config.openshift.io
     resources:
-      - '*'
+      - "*"
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
       - console.openshift.io
     resources:
-      - '*'
+      - "*"
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
-      - ''
+      - ""
     resources:
       - namespaces
       - persistentvolumeclaims
       - persistentvolumes
       - configmaps
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
       - rbac.authorization.k8s.io
     resources:
-      - '*'
+      - "*"
   - verbs:
-      - '*'
+      - "*"
     apiGroups:
       - storage.k8s.io
     resources:
-      - '*'
+      - "*"
+  - verbs:
+      - "*"
+    apiGroups:
+      - machineconfiguration.openshift.io
+    resources:
+      - "*"
