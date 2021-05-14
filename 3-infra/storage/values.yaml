@@ -1,5 +1,5 @@
 global: {}
-refarch-machinesets:
+ocs-operator:
   ocs:
     installOCS: true
     channel: stable-4.6
