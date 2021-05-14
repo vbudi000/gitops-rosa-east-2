@@ -179,5 +179,6 @@ rules:
       - openshift-cluster-node-tuning-operator
       - ocs.openshift.io
       - machine.openshift.io
+      - tuned.openshift.io
     resources:
       - "*"
