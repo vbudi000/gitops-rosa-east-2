@@ -172,27 +172,12 @@ rules:
       - storage.k8s.io
     resources:
       - "*"
-  - verbs:
+  - verbs: # for refarch machinesets, ocs, infraconfig
       - "*"
     apiGroups:
       - machineconfiguration.openshift.io
-    resources:
-      - "*"
-  - verbs:
-      - "*"
-    apiGroups:
       - openshift-cluster-node-tuning-operator
-    resources:
-      - "*"
-  - verbs:
-      - "*"
-    apiGroups:
       - ocs.openshift.io
-    resources:
-      - "*"
-  - verbs:
-      - "*"
-    apiGroups:
       - machine.openshift.io
     resources:
       - "*"
