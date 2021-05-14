@@ -13,7 +13,7 @@ spec:
   project: infra
   source:
     path: 3-infra/consolelink
-    repoURL: https://github.com/ncolon/multi-tenancy-gitops.git
+    repoURL: https://github.com/vbudi000/gitops-rosa-east-2.git
     targetRevision: master
   syncPolicy:
     automated:

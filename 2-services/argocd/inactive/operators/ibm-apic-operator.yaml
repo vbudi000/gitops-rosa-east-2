@@ -15,7 +15,7 @@ spec:
   project: services
   source:
     path: 2-services/operators/ibm-apic-operator
-    repoURL: https://github.com/ncolon/multi-tenancy-gitops.git
+    repoURL: https://github.com/vbudi000/gitops-rosa-east-2.git
     targetRevision: master
     helm:
       valueFiles:

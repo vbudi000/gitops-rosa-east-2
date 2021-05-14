@@ -5,7 +5,7 @@ metadata:
   name: services
 spec:
   sourceRepos:
-    - https://github.com/ncolon/multi-tenancy-gitops.git
+    - https://github.com/vbudi000/gitops-rosa-east-2.git
   destinations:
     - namespace: tools
       server: https://kubernetes.default.svc
@@ -77,7 +77,7 @@ spec:
   project: default
   source:
     path: 2-services/argocd/active/operators
-    repoURL: https://github.com/ncolon/multi-tenancy-gitops.git
+    repoURL: https://github.com/vbudi000/gitops-rosa-east-2.git
     targetRevision: master
   syncPolicy:
     automated:
@@ -97,7 +97,7 @@ spec:
   project: default
   source:
     path: 2-services/argocd/active/instances
-    repoURL: https://github.com/ncolon/multi-tenancy-gitops.git
+    repoURL: https://github.com/vbudi000/gitops-rosa-east-2.git
     targetRevision: master
   syncPolicy:
     automated:
