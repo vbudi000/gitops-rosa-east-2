@@ -1,6 +1,6 @@
 global: {}
 refarch-machinesets:
-  infrastructureId: "rosa-east-2-2j8v9"
+  infrastructureId: "rosa-east-2-zv89m"
   cloudProvider: "aws"
   aws:
     region: us-east-1
