@@ -8,7 +8,7 @@ refarch-machinesets:
     - us-east-1a
     - us-east-1b
     - us-east-1c
-    image: ami-04a16d506e5b0e246
+    image: ami-01ea0772949cb189a
     infraNodes:
       nodeCount: 1
       volumeSize: 120
