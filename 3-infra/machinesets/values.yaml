@@ -18,7 +18,7 @@ refarch-machinesets:
       nodeCount: 1
       volumeSize: 120
       volumeType: gp2
-      instanceType: m5.2xlarge
+      instanceType: m5.4xlarge
     cloudpakNodes:
       nodeCount: 0
       volumeSize: 120
