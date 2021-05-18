@@ -5,4 +5,4 @@ metadata:
 spec:
   backgroundColor: teal
   location: BannerTop
-  text: Cluster description
+  text: ROSA (AWS) OCP47 US East Cluster
